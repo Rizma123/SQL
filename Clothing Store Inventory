@@ -24,5 +24,4 @@ Select * FROM Clothing;
 SELECT * FROM clothing WHERE price > 25 ORDER BY price;
 
 --what is the max price of the clothing on your store?
-INSERT INTO clothing VALUES (16,"mens socks", 30,"Nike",3);
 SELECT MAX(price) FROM clothing;
