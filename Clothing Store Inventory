@@ -1,0 +1,28 @@
+CREATE TABLE Clothing (id INTEGER PRIMARY KEY, Name TEXT, Price INTEGER, Brand TEXT,Quantity INTEGER );
+
+INSERT INTO Clothing VALUES 
+(1,"UK Shirt", 20, "Lulu",32),
+(2, "UK Shirt",30,"Nike",24),
+(3, "Uk hairband",10, "pink",1),
+(4, "UK earrings",5,"Champion",1),
+(5, "UT Shirt",33, "Lulu",4),
+(6, "UT Shorts",22, "Nike",6),
+(7, "UT band",34, "Lulu",8),
+(8, "UT flag",25, "Champion",9),
+(9, "UT box",13, "Nike",5),
+(10, "UT diary",23, "Champion",44),
+(11, "UT underwear",10, "pink",45),
+(12, "UT wristband",5, "Lulu",32),
+(13, "UT ring shorts",20, "Lulu",24),
+(14, "UT pants",43, "Lulu",1),
+(15, "UT mens pants",33, "Nike",1)
+;
+
+Select * FROM Clothing;
+
+--display the databases ordered by price
+SELECT * FROM clothing WHERE price > 25 ORDER BY price;
+
+--what is the max price of the clothing on your store?
+INSERT INTO clothing VALUES (16,"mens socks", 30,"Nike",3);
+SELECT MAX(price) FROM clothing;
